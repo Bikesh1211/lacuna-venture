@@ -51,7 +51,6 @@ const JoinContainer = styled.div`
         p{
             font-weight:bold ;
             font-size:22px ;
-            font-family:sans-serif ;
         }
         margin-top:100px ;
 

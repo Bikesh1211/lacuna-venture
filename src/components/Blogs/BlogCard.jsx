@@ -28,8 +28,9 @@ const Container = styled.div`
                 padding:10px;
                 padding-bottom:0 ;
                 font-weight:bold ;
-                font-family:Arial, Helvetica, sans-serif ;
                 color: white ;
+                font-family: Montserrat;
+
             }
          img{
             object-fit: cover;

@@ -3,9 +3,8 @@
 
 
 
-.container-fluid{
-    /* background-color: #0D0D0D; */
-    /* background-color: #fa7525; */
+body{
+    font-family: Montserrat;
 }
 .login-container-fluid{
     background-color: #F7F7F7;
