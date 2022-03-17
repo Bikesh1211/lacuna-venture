@@ -54,8 +54,7 @@ const Container = styled.div`
             color:white ;
         }
         
-            background-color: #091020;
-
+        background-color: #091020;
         border-radius: 10px 10px 0 0 ;
 
 margin-top:30px ;
@@ -73,7 +72,7 @@ border-radius:10px 10px 0 0 ;
 transition: all ease .5s;
 &:hover{
     transform:rotateZ(5deg) ;
-    background-color:orange ;
+    background-color:#fa7525 ;
 }
 
 

@@ -93,10 +93,10 @@ grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
 const Heading = styled.h1`
     font-size:50px ;
     text-transform:uppercase ;
-    font-family: 'Playfair Display', serif;
+    font-family:Montserrat Bold;
     font-weight:bold;
     transition: all ease .6s ;
-    color: orange;
+    color: #fa7525;
     
       &:hover{
           letter-spacing:10px ;
