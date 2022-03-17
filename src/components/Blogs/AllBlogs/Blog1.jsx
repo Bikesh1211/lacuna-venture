@@ -25,10 +25,9 @@ function BlogsContent() {
         article2 = 'A journal is great for recording thoughts, feelings, and the history of your life. It also is a great way to structure and develop ideation habits. If you don’t keep a journal, start today. You can plan and visualize things in your head and write it in your journal so that you won’t forget them in the future. Keeping a journal is a really good habit that will surely give you fruitful results. The act of taking a business idea and fleshing it out on paper not only makes it tangible and real but also allows for the growth and expansion of that idea.'
         
         heading3='Don’t make unrealistic assumptions:'
+        showmore='HOW TO START A BUSINESS WITH LOW INVESTMENT?'
         article3='By their very nature, business plans are full of assumptions. The most important assumption, of course, is that your business will succeed! The best business plans highlight critical assumptions and the worst business plans bury assumptions throughout the plan so no one can tell where the assumptions end and the facts begin. Market size, acceptable pricing, customer purchasing behavior, these all involve assumptions. Wherever possible, make sure you make assumptions that make sense and help you reach your goal in the future.'
-          />
-          <a href="#something">HOW TO START A BUSINESS WITH LOW INVESTMENT?</a>
-          <BlogItem 
+
             heading4='Do your research:'
             article4='Investigate everything you can about your proposed business before you start writing your business plan–and long before you start the business. You’ll also need to continue your research while you write the business plan since inevitably, things will change as you uncover critical information. Also make sure to consult multiple sources, take ideas thoroughly, write, evaluate and analyze information.'
 

@@ -28,7 +28,11 @@ function BlogItem(props) {
                 <p>{props.article2} </p>
 
                 <Heading>{props.heading3} </Heading>
-                <p>{props.article3} </p>
+                <p>{props.article3}<br />
+                <a href="#somewhere">
+                    {props.showmore}
+                </a>
+                </p>
 
                 <Heading>{props.heading4} </Heading>
                 <p>{props.article4} </p>
