@@ -29,7 +29,7 @@ function BlogItem(props) {
 
                 <Heading>{props.heading3} </Heading>
                 <p>{props.article3}<br />
-                <a href="#somewhere">
+                <a href="/blog2">
                     {props.showmore}
                 </a>
                 </p>

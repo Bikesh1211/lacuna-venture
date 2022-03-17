@@ -3,11 +3,10 @@ import BlogItem from "../BlogItem";
 import styled from 'styled-components';
 function BlogsContent() {
   return (
-    <Container>
+    <Container className="container">
       <BlogItem
         image="https://lacunaventure.com/wp-content/uploads/2022/02/invest.jpg"
         title="A GUIDE TO CREATING AN EFFECTIVE IDEA AND BUSINESS PLAN"/>
-        <h1>Blog2</h1>
     </Container>
   );
 }
