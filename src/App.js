@@ -1,25 +1,40 @@
-import logo from './logo.svg';
-import './App.css';
+import Blogs from "./components/Blogs/Blogs";
+import {Routes,Route,Link} from 'react-router-dom'
+import styled from "styled-components";
+import Login from './components/login/login'
+import Blog1 from './components/Blogs/AllBlogs/Blog1'
+import Blog2 from './components/Blogs/AllBlogs/Blog2'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Nav>
+
+
+      <Link to='/home'>Home</Link>
+      <Link to='/blogs'>Blogs</Link>
+      <Link to='/login'>Login</Link>
+      </Nav>
+      <Routes>
+        
+
+        <Route path="blogs" element={<Blogs/>} />
+        <Route path="login" element={<Login/> } />
+
+        <Route path="blog1" element={<Blog1/> } />
+        <Route path="blog2" element={<Blog2/> } />
+
+      </Routes>
+        
     </div>
   );
 }
 
 export default App;
+const Nav = styled.div`
+background-color:black ;
+padding:25px ;
+ a{
+   margin-left:20px;
+ }
+`
