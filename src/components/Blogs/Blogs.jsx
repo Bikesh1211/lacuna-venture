@@ -97,8 +97,10 @@ const Heading = styled.h1`
     font-weight:bold;
     transition: all ease .6s ;
     color: #fa7525;
+    margin-top:20px ;
     
       &:hover{
-          letter-spacing:10px ;
+          /* letter-spacing:6px ; */
+          margin-left:50px ;
       }
 `

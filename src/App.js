@@ -2,6 +2,7 @@ import Blogs from "./components/Blogs/Blogs";
 import {Routes,Route,Link} from 'react-router-dom'
 import styled from "styled-components";
 import Login from './components/login/login'
+
 import Blog1 from './components/Blogs/AllBlogs/Blog1'
 import Blog2 from './components/Blogs/AllBlogs/Blog2'
 
@@ -33,8 +34,10 @@ function App() {
 export default App;
 const Nav = styled.div`
 background-color:black ;
+background-color:#FA7525 ;
 padding:25px ;
  a{
    margin-left:20px;
+   color:black ;
  }
 `

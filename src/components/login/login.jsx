@@ -74,9 +74,9 @@ grid-gap:20px ;
 grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
 grid-template-rows: 500px 400px;
 text-align:center ;
-font-family:Arial, Helvetica, sans-serif ;
+font-family: Montserrat bold;
 
-padding-top:50px ;
+padding-top:30px ;
 div{
     /* border:1px solid red ; */
 }
@@ -89,7 +89,8 @@ div{
             width:90% ;
             height:100px ;
             object-fit:cover ;
-            margin-right:20px ;
+            margin-right:20%;
+            margin-bottom:25px ;
         }
         button{
             background-color:#fa7525 ;
