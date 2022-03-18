@@ -1,6 +1,5 @@
 import styled from 'styled-components';
-import Fade from 'react-reveal/Fade';
-import {Routes,Route,Link} from 'react-router-dom'
+import {Link} from 'react-router-dom'
 
 
 function BlogCard(props) {

@@ -1,23 +1,30 @@
 import { Routes,Route } from 'react-router-dom';
 import styled from 'styled-components';
 import Blog1 from './AllBlogs/Blog1'
+import Fade from 'react-reveal/Fade';
+import Slide from 'react-reveal/Slide';
+import { Link } from "react-router-dom";
+
+
 function BlogItem(props) {
   return (
     <Container className='container'>
         <div>
+            <Fade left>
+
             <img src={props.image} alt="" />
-            <h1>{props.title} </h1>
+            </Fade>
             
             {/* <Routes>
             <Route path="blog1" element={<Blog1/> } />
-            </Routes> */}
+        </Routes> */}
 
+                <Fade up>
+                    
 
+                <h1>{props.title} </h1>
 
-{/* social media */}
-            <Heading>{props.share}</Heading>
-{/* social media */}
-
+              <Heading>Spread the love</Heading>
                 {/* article */}
                 <p> {props.article} </p>
 
@@ -28,38 +35,80 @@ function BlogItem(props) {
                 <p>{props.article2} </p>
 
                 <Heading>{props.heading3} </Heading>
+                <Slide up>
                 <p>{props.article3}<br />
-                <a href="/blog2">
+
+                <Link to="/blog2">
                     {props.showmore}
-                </a>
+                </Link>
+
                 </p>
+                </Slide>
 
                 <Heading>{props.heading4} </Heading>
                 <p>{props.article4} </p>
 
                 <Heading>{props.heading5} </Heading>
                 <p>{props.article5} </p>
+                <p>{props.article6} </p>
+
+                <Heading>{props.heading7} </Heading>
+                <p>{props.article7} </p>
+
 
 
                 
                 {/* article */}
+                </Fade>
+
 
 
         </div>
+        <Fade right>
+
         <RecentPost>
             <input type="search" placeholder='Search Post Here'/>
             <h1>RECENT POST</h1>
 
             <div className="recent-post">
-                <p>A Guide to Creating an Effective Idea and Business Plan</p>
+                <a href="#fs">
+
+                <img src="https://lacunaventure.com/wp-content/uploads/2022/02/Guide.jpg" alt="" />
+                <p>A GUIDE TO CREATING AN EFFECTIVE IDEA AND BUSINESS PLAN</p>
+
+                </a>
+                <p>March 9, 2022</p>
             </div>
+
             <div className="recent-post">
-                <p>A Guide to Creating an Effective Idea and Business Plan</p>
+                <a href="#fs">
+
+                <img src="https://lacunaventure.com/wp-content/uploads/2022/02/Guide.jpg" alt="" />
+                <p>HOW TO START A BUSINESS WITH LOW INVESTMENT?</p>
+                </a>
+                <p>March 9, 2022</p>
             </div>
+
             <div className="recent-post">
-                <p>A Guide to Creating an Effective Idea and Business Plan</p>
+                <a href="#fs">
+
+                <img src="https://lacunaventure.com/wp-content/uploads/2022/02/Guide.jpg" alt="" />
+                <p>Why Are Audience Getting Addicted to Lacuna Mart Nowadays?</p>
+                </a>
+                <p>March 9, 2022</p>
+
             </div>
+
+        <ImportantLink>
+            <h1>IMPORTANT LINK</h1>
+            <Link to='/Blogs'>Blogs</Link>
+            <Link to='/Blogs'>Events</Link>
+            <Link to='/Blogs'>Workshop</Link>
+            <Link to='/Blogs'>Galarry</Link>
+
+        </ImportantLink>
         </RecentPost>
+        </Fade>
 
     </Container>
   )
@@ -67,8 +116,29 @@ function BlogItem(props) {
 
 export default BlogItem
 const RecentPost = styled.div` 
+p{
+    font-size:1rem;
+}
+
+.recent-post img{
+            width:50px ;
+            height: 50px;
+            object-fit: cover;
+        }
+
+        p{
+            width:76% ;
+        }
+        a{
+            display: flex;
+            justify-content:space-between ;
+            color:black ;
+            &:hover{
+                    color:orange ;
+            }
+        }
+        
 font-family:Montserrat bold;
-font-size:20px ;
         input{
             height:50px ;
             outline:none ;
@@ -78,14 +148,24 @@ font-size:20px ;
         }
 `
 
+
+
 const Container = styled.div` 
+margin-top: 50px;
+font-family:monaster ;
+letter-spacing:1px ;
+h1{
+            font-size:24px ;
+            margin-top: 30px;
+        }
 
 display: grid;
 grid-gap:25px;
 grid-template-columns: 2.8fr 1fr ;
 
-        @media (max-width: 800px){
-            grid-template-columns:1fr ;
+        @media (max-width: 990px){
+            grid-template-columns:1fr ; 
+            
         }
 
     img{
@@ -93,9 +173,24 @@ grid-template-columns: 2.8fr 1fr ;
     }
     p{
         font-family:Arial, Helvetica, sans-serif ;
+        line-height:30px ;
+        /* font-family: Montserrat; */
+    }
+    a{
+        text-decoration:none ;
     }
 
 `
 const Heading = styled.p` 
     font-weight: bold;
+`
+
+const ImportantLink = styled.div`
+        a{
+            background-color:#F5F7FB ;
+            margin-bottom:5px ;
+            padding:10px ;
+
+        }
+
 `

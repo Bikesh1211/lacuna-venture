@@ -5,6 +5,7 @@ import Login from './components/login/login'
 
 import Blog1 from './components/Blogs/AllBlogs/Blog1'
 import Blog2 from './components/Blogs/AllBlogs/Blog2'
+import BlogsContent from "./components/Blogs/BlogsContent";
 
 function App() {
   return (
@@ -16,16 +17,13 @@ function App() {
       <Link to='/blogs'>Blogs</Link>
       <Link to='/login'>Login</Link>
       </Nav>
+
+      
+      <BlogsContent/>
+
       <Routes>
-        
-
-        <Route path="blogs" element={<Blogs/>} />
-        <Route path="login" element={<Login/> } />
-
-        <Route path="blog1" element={<Blog1/> } />
-        <Route path="blog2" element={<Blog2/> } />
-
-      </Routes>
+            <Route path="login" element={<Login/> } />
+      </Routes> 
         
     </div>
   );

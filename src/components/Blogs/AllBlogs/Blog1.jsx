@@ -5,7 +5,6 @@ function BlogsContent() {
   return (
     <Container className="container">
       <BlogItem
-        share='Spread the love'
         image="https://lacunaventure.com/wp-content/uploads/2022/02/Guide.jpg"
         title="A GUIDE TO CREATING AN EFFECTIVE IDEA AND BUSINESS PLAN"
         article='A solid business plan should be a blueprint for a successful business. Starting a business is a 
@@ -44,7 +43,5 @@ function BlogsContent() {
 
 export default BlogsContent;
 const Container  = styled.div`
-font-family:monaster ;
-margin-top: 50px;
 
 `
