@@ -32,7 +32,7 @@ function login() {
 
         <JoinContainer>
             <h1>Launch Your Idea</h1>
-            <p>Get Started As an early stage entrepreneur? Join Our entrepreneurial Workshop Sessions Today.</p>
+            <p>Get Started as an early stage entrepreneur? Join Our entrepreneurial Workshop Sessions Today.</p>
             <button>YES, SHOW ME HOW TO START<br /> </button>
         </JoinContainer>
         </Slide>

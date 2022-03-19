@@ -27,7 +27,8 @@ const Container = styled.div`
                 padding:10px;
                 padding-bottom:0 ;
                 font-weight:bold ;
-                color: white;
+                /* color: white; */
+                color:black ;
                 font-family: Montserrat;
 
             }
@@ -55,7 +56,8 @@ const Container = styled.div`
         }
         
         background-color: #091020;
-        background-color:black ;
+        background-color:#F1F1F1;
+
         border-radius: 10px 10px 0 0 ;
 
 margin-top:30px ;
@@ -68,13 +70,14 @@ grid-template-rows: 300px ;
 `
 const Card = styled.div`
 box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
+box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;
 
 cursor: pointer;
 border-radius:10px 10px 0 0 ;
 transition: all ease .5s;
 &:hover{
     transform:rotateZ(5deg) ;
-    background-color:#fa7525 ;
+    background-color:#FFF1BD ;
 }
 
 

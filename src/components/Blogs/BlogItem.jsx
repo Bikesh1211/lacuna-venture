@@ -1,6 +1,5 @@
 import { Routes,Route } from 'react-router-dom';
 import styled from 'styled-components';
-import Blog1 from './AllBlogs/Blog1'
 import Fade from 'react-reveal/Fade';
 import Slide from 'react-reveal/Slide';
 import { Link } from "react-router-dom";
@@ -14,10 +13,6 @@ function BlogItem(props) {
 
             <img src={props.image} alt="" />
             </Fade>
-            
-            {/* <Routes>
-            <Route path="blog1" element={<Blog1/> } />
-        </Routes> */}
 
                 <Fade up>
                     
@@ -34,6 +29,7 @@ function BlogItem(props) {
                 <Heading>{props.heading2} </Heading>
                 <p>{props.article2} </p>
 
+                <img src={props.image2} alt="" />
                 <Heading>{props.heading3} </Heading>
                 <Slide up>
                 <p>{props.article3}<br />
@@ -52,8 +48,21 @@ function BlogItem(props) {
                 <p>{props.article5} </p>
                 <p>{props.article6} </p>
 
+                <img src={props.image3} alt="" />
+
                 <Heading>{props.heading7} </Heading>
                 <p>{props.article7} </p>
+                <p>{props.article8} </p>
+
+                <Heading>{props.heading9} </Heading>
+                <p>{props.article9} </p>
+                <Heading>{props.heading10} </Heading>
+                <p>{props.article10} </p>
+                <Heading>{props.heading11} </Heading>
+                <p>{props.article11} </p>
+                <Heading>{props.heading12} </Heading>
+
+
 
 
 
@@ -77,7 +86,7 @@ function BlogItem(props) {
                 <p>A GUIDE TO CREATING AN EFFECTIVE IDEA AND BUSINESS PLAN</p>
 
                 </a>
-                <p>March 9, 2022</p>
+                <p className='recent-post-date'>March 9, 2022</p>
             </div>
 
             <div className="recent-post">
@@ -86,7 +95,7 @@ function BlogItem(props) {
                 <img src="https://lacunaventure.com/wp-content/uploads/2022/02/Guide.jpg" alt="" />
                 <p>HOW TO START A BUSINESS WITH LOW INVESTMENT?</p>
                 </a>
-                <p>March 9, 2022</p>
+                <p className='recent-post-date'>March 9, 2022</p>
             </div>
 
             <div className="recent-post">
@@ -95,7 +104,7 @@ function BlogItem(props) {
                 <img src="https://lacunaventure.com/wp-content/uploads/2022/02/Guide.jpg" alt="" />
                 <p>Why Are Audience Getting Addicted to Lacuna Mart Nowadays?</p>
                 </a>
-                <p>March 9, 2022</p>
+                <p className='recent-post-date'>March 9, 2022</p>
 
             </div>
 
@@ -104,7 +113,7 @@ function BlogItem(props) {
             <Link to='/Blogs'>Blogs</Link>
             <Link to='/Blogs'>Events</Link>
             <Link to='/Blogs'>Workshop</Link>
-            <Link to='/Blogs'>Galarry</Link>
+            <Link to='/Blogs'>Gallery</Link>
 
         </ImportantLink>
         </RecentPost>
@@ -118,6 +127,11 @@ export default BlogItem
 const RecentPost = styled.div` 
 p{
     font-size:1rem;
+    line-height:20px !important;
+    text-transform:lowercase ;
+}
+.recent-post-date{
+    color:gray ;
 }
 
 .recent-post img{
@@ -138,7 +152,7 @@ p{
             }
         }
         
-font-family:Montserrat bold;
+/* font-family:Montserrat bold; */
         input{
             height:50px ;
             outline:none ;
@@ -152,8 +166,10 @@ font-family:Montserrat bold;
 
 const Container = styled.div` 
 margin-top: 50px;
-font-family:monaster ;
-letter-spacing:1px ;
+/* font-family:monaster ; */
+letter-spacing:2px ;
+font-size:20px ;
+font-weight:normal ;
 h1{
             font-size:24px ;
             margin-top: 30px;
@@ -173,7 +189,6 @@ grid-template-columns: 2.8fr 1fr ;
     }
     p{
         font-family:Arial, Helvetica, sans-serif ;
-        line-height:30px ;
         /* font-family: Montserrat; */
     }
     a{
