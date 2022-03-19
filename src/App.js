@@ -6,6 +6,7 @@ import Login from './components/login/login'
 import Blog1 from './components/Blogs/AllBlogs/Blog1'
 import Blog2 from './components/Blogs/AllBlogs/Blog2'
 import BlogsContent from "./components/Blogs/BlogsContent";
+import Workshop from "./components/Workshop/Workshop";
 
 function App() {
   return (
@@ -16,13 +17,16 @@ function App() {
       <Link to='/home'>Home</Link>
       <Link to='/blogs'>Blogs</Link>
       <Link to='/login'>Login</Link>
+      <Link to='/workshop'>Workshop</Link>
       </Nav>
 
       
-      <BlogsContent/>
 
+
+      <BlogsContent/>
       <Routes>
             <Route path="login" element={<Login/> } />
+            <Route path="workshop" element={<Workshop/>} />
       </Routes> 
         
     </div>
@@ -37,5 +41,10 @@ padding:25px ;
  a{
    margin-left:20px;
    color:black ;
+   text-decoration:none ;
+   &:hover{
+     color:whitesmoke ;
+   }
+   
  }
 `
