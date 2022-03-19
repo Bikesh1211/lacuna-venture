@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import Logo from '../../assets/logo.jpeg'
+import Logo from '../../assets/img/logo.jpeg'
 import Slide from 'react-reveal/Slide';
 
 function login() {

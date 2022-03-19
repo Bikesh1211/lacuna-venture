@@ -1,11 +1,13 @@
 import BlogItem from "../BlogItem"
 import styled from 'styled-components';
+import blogImg3 from '../../../assets/img/blog3.jpg'
+
 
 function Blog3() {
   return (
     <div>
         <BlogItem
-            image='https://lacunaventure.com/wp-content/uploads/2021/05/gadgets.jpg'
+            image={blogImg3}
             title='WHY ARE AUDIENCE GETTING ADDICTED TO LACUNA MART NOWADAYS?'
 
             article='Why Are Audience Getting Addicted to Lacuna Mart Nowadays?

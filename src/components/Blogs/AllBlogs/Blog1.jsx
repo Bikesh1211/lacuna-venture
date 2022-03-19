@@ -1,11 +1,13 @@
 import React from "react";
 import BlogItem from "../BlogItem";
 import styled from 'styled-components';
+import blogImg1 from '../../../assets/img/blog1.jpg'
+
 function BlogsContent() {
   return (
     <Container className="container">
       <BlogItem
-        image="https://lacunaventure.com/wp-content/uploads/2022/02/Guide.jpg"
+        image={blogImg1}
         title="A GUIDE TO CREATING AN EFFECTIVE IDEA AND BUSINESS PLAN"
         article='A solid business plan should be a blueprint for a successful business. Starting a business is a 
                 huge responsibility, you have to work on a lot of things to make it happen in real life. You have to create

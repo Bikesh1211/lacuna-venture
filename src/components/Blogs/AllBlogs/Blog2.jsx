@@ -1,11 +1,13 @@
 import React from "react";
 import BlogItem from "../BlogItem";
 import styled from 'styled-components';
+import blogImg2 from '../../../assets/img/blog2.jpg'
+
 function BlogsContent() {
   return (
     <Container className="container">
       <BlogItem
-        image="https://lacunaventure.com/wp-content/uploads/2022/02/invest.jpg"
+        image={blogImg2}
         title="HOW TO START A BUSINESS WITH LOW INVESTMENT?"
         article='It is very difficult to start a business in the competitive world and mainly it requires huge capital to start a business but if you will think deeply and creatively then you can start your own business with some criteria and also if you’re not financially stable then you can also start implementing some low-cost business ideas. There are many ideas to start a business with low investment, some of them are:'
 

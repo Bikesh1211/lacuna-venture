@@ -1,11 +1,16 @@
 import React from 'react'
 import BlogItem from '../BlogItem'
 import styled from 'styled-components';
+import blogImg6 from '../../../assets/img/blog6.jpg'
+import blogImg6_1 from '../../../assets/img/blog6-1.jpg'
+import blogImg6_2 from '../../../assets/img/blog6-2.jpg'
+import mahendra_gautam from '../../../assets/img/mahendra-gautam.jpg'
+
 function Blog6() {
   return (
     <div>
         <BlogItem
-        image='https://lacunaventure.com/wp-content/uploads/2021/06/lacuna-blog.jpg'
+        image={blogImg6}
         title='STARTUPS, FAILING BUSINESSES, AND THE TOUGHEST DECISIONS'
         article='Since, the global pandemic hit the world; horrendous outline for terrible economic crisis high unemployment rate is all around. Businesses are experiencing critical economic crisis as they are struggling to sustain and operate their businesses. As most of the businesses are devastated to generate revenue to operate and sustain their business due to the ongoing lockdown and are on the verge to shut down their business for better or worse.'
 
@@ -13,7 +18,7 @@ function Blog6() {
 
         heading2='Consistent adaptation is of central significance with regards to our achievements in business or in life when all is said in done. So, to overcome these challenges, entrepreneurs have to adapt to the market changes accordingly to sustain their business hit by the Covid 19.'
 
-        image2='https://lacunaventure.com/wp-content/uploads/2021/06/but-do-you.jpg'
+        image2={blogImg6_1}
 
         heading3='Architect your project with your crucial general vision'
         
@@ -32,7 +37,7 @@ function Blog6() {
 
         Failure does not happen by chance. It all starts with ignorance, which can be remedied. Startups will continue to lead innovation in the future so, make sure you make plans and policies accordingly for at least a year and keep the communication transparent with your employees and stakeholders or investors.'
 
-        image3='https://lacunaventure.com/wp-content/uploads/2021/06/how-old-you.jpg'
+        image3={blogImg6_2}
 
         article7='However, startups or entrepreneurs might witness difficulty in securing the capital to operate their businesses and sustain their businesses. With ongoing lockdown and the pandemic, investors might take longer time to trust your business model and fund for your model following the due diligence procedure. This might be a great opportunity for the willing entrepreneurs and startups to turn over the fortune, if you look at the previous events of economic crisis. So, many investors will be looking for creative and innovative business models that they want to invest in and secure their investments. So, it’s always important to analyze our business model and create our opportunities accordingly to the market changes.'
         article8='Let me introduce you Lacuna Venture Sustainable Business Services. To optimize technology, we have developed one of the only fully enhanced feature services, startup workshop, allowing business owner to launch their business online and outreach the customers. Go hand in hand with your mission and vision to grow your business and get it online. We aim to familiarize sustainable start-up ideas to enthusiasts addressing the prospects of “The Entrepreneurship”. When it comes to new talent, the door should be opened equally to each and every individual. While having many opportunities for success, not providing equal opportunities and resources to these young people has resulted in their failure in their startups multiple times.'
@@ -53,7 +58,7 @@ function Blog6() {
           <div id="message-from-ceo">
             <div>
 
-          <img src="https://lacunaventure.com/wp-content/uploads/2021/03/mahendra-gautam.jpg" alt="" />
+          <img src={mahendra_gautam} alt="" />
             </div>
 
 

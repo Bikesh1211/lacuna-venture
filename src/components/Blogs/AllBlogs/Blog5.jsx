@@ -1,12 +1,14 @@
 import React from 'react'
 import styled from 'styled-components';
 import BlogItem from '../BlogItem';
+import blogImg5 from '../../../assets/img/blog5.jpg'
+
 
 function Blog5() {
   return (
     <div>
         <BlogItem
-        image='https://lacunaventure.com/wp-content/uploads/2021/06/where-does-nepal-scaled.jpg'
+        image={blogImg5}
         title='WHERE DOES NEPAL STAND ON INNOVATIVE STARTUPS?'
 
         article='“A friend might be able to make it after graduating from university, only for the cost-of-living crisis to swallow his dreams”- they said.

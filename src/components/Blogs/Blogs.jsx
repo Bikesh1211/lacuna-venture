@@ -2,6 +2,13 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import styled from 'styled-components';
 import Fade from 'react-reveal/Fade';
 import BlogCard from './BlogCard';
+import blogImg1 from '../../assets/img/blog1.jpg'
+import blogImg2 from '../../assets/img/blog2.jpg'
+import blogImg3 from '../../assets/img/blog3.jpg'
+import blogImg4 from '../../assets/img/blog4.jpg'
+import blogImg5 from '../../assets/img/blog5.jpg'
+import blogImg6 from '../../assets/img/blog6.jpg'
+import blogImg7 from '../../assets/img/blog7.jpg'
 
 function Blogs() {
   return (
@@ -17,15 +24,15 @@ function Blogs() {
             {/* Row */}
             <Fade up>
         <BlogCard 
-                image = 'https://lacunaventure.com/wp-content/uploads/2022/02/Guide.jpg' 
+                image = {blogImg1}
                 title = 'A GUIDE TO CREATING AN EFFECTIVE IDEA AND BUSINESS PLAN'
                 blogID='blog1'/>
         <BlogCard 
-                image = 'https://lacunaventure.com/wp-content/uploads/2022/02/invest-768x572.jpg' 
+                image={blogImg2}
                 title = 'HOW TO START A BUSINESS WITH LOW INVESTMENT?'
                 blogID='blog2'/>
         <BlogCard 
-                image = 'https://lacunaventure.com/wp-content/uploads/2021/05/gadgets.jpg' 
+                image ={blogImg3}
                 title = 'WHY ARE AUDIENCE GETTING ADDICTED TO LACUNA MART NOWADAYS?'
                 blogID='blog3'/>
             </Fade>
@@ -37,7 +44,7 @@ function Blogs() {
 
 
         <BlogCard 
-                image = 'https://lacunaventure.com/wp-content/uploads/2021/07/How-low-can-768x482.jpg' 
+                image ={blogImg4} 
                 title = 'THE COMPLETE BEGINNERS GUIDE TO ENTREPRENEURS- STARTUP GUIDES FOR ENTREPRENEURS'
                 blogID='blog4'/>
 
@@ -49,11 +56,11 @@ function Blogs() {
             <Fade up>
 
         <BlogCard 
-                image = 'https://lacunaventure.com/wp-content/uploads/2021/06/where-does-nepal-768x432.jpg' 
+                image = {blogImg5}
                 title = 'WHERE DOES NEPAL STAND ON INNOVATIVE STARTUPS?'
                 blogID='blog5'/>
         <BlogCard 
-                image = 'https://lacunaventure.com/wp-content/uploads/2021/06/lacuna-blog-768x482.jpg' 
+                image={blogImg6}
                 title = 'STARTUPS, FAILING BUSINESSES, AND THE TOUGHEST DECISIONS'
                 blogID='blog6'/>
             </Fade>
@@ -65,7 +72,7 @@ function Blogs() {
                 <Fade up>
 
                 <BlogCard 
-                image = 'https://lacunaventure.com/wp-content/uploads/2021/05/failure-768x432.jpg' 
+                image = {blogImg7} 
                 title = 'WHY DO STARTUPS IN NEPAL FAIL?'
                 blogID='blog7'/>
                 </Fade>

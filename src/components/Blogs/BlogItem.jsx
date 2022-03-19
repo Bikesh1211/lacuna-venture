@@ -86,25 +86,25 @@ function BlogItem(props) {
                 <p>A GUIDE TO CREATING AN EFFECTIVE IDEA AND BUSINESS PLAN</p>
 
                 </a>
-                <p className='recent-post-date'>March 9, 2022</p>
+                <p className='recent-post-date'>February 9, 2022</p>
             </div>
 
             <div className="recent-post">
                 <a href="#fs">
 
-                <img src="https://lacunaventure.com/wp-content/uploads/2022/02/Guide.jpg" alt="" />
+                <img src="https://lacunaventure.com/wp-content/uploads/2022/02/invest.jpg" alt="" />
                 <p>HOW TO START A BUSINESS WITH LOW INVESTMENT?</p>
                 </a>
-                <p className='recent-post-date'>March 9, 2022</p>
+                <p className='recent-post-date'>February 6, 2022</p>
             </div>
 
             <div className="recent-post">
                 <a href="#fs">
 
-                <img src="https://lacunaventure.com/wp-content/uploads/2022/02/Guide.jpg" alt="" />
+                <img src="https://lacunaventure.com/wp-content/uploads/2021/05/gadgets.jpg" alt="" />
                 <p>Why Are Audience Getting Addicted to Lacuna Mart Nowadays?</p>
                 </a>
-                <p className='recent-post-date'>March 9, 2022</p>
+                <p className='recent-post-date'>October 14, 2021</p>
 
             </div>
 
@@ -128,10 +128,13 @@ const RecentPost = styled.div`
 p{
     font-size:1rem;
     line-height:20px !important;
-    text-transform:lowercase ;
+    /* text-transform:lowercase ; */
+    font-weight:bold ;
 }
 .recent-post-date{
     color:gray ;
+    font-weight:normal ;
+    font-size:.6em ;
 }
 
 .recent-post img{

@@ -1,11 +1,13 @@
 import React from 'react'
 import BlogItem from '../BlogItem'
+import blogImg4 from '../../../assets/img/blog4.jpg'
+
 
 function Blog4() {
   return (
     <div>
         <BlogItem
-        image='https://lacunaventure.com/wp-content/uploads/2021/05/lacuna-us.jpg'
+        image={blogImg4}
         title='WHAT IS LACUNA VENTURE ALL ABOUT? FIND OUT HOW YOU CAN KICK START YOUR STARTUP.'
 
         article='Have you ever heard that anyone said that being an entrepreneur was easy?  
