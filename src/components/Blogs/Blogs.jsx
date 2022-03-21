@@ -26,14 +26,17 @@ function Blogs() {
         <BlogCard 
                 image = {blogImg1}
                 title = 'A GUIDE TO CREATING AN EFFECTIVE IDEA AND BUSINESS PLAN'
+                date='February 9, 2022'
                 blogID='blog1'/>
         <BlogCard 
                 image={blogImg2}
                 title = 'HOW TO START A BUSINESS WITH LOW INVESTMENT?'
+                date='February 6, 2022'
                 blogID='blog2'/>
         <BlogCard 
                 image ={blogImg3}
                 title = 'WHY ARE AUDIENCE GETTING ADDICTED TO LACUNA MART NOWADAYS?'
+                date='October 14, 2021'
                 blogID='blog3'/>
             </Fade>
 
@@ -46,6 +49,7 @@ function Blogs() {
         <BlogCard 
                 image ={blogImg4} 
                 title = 'THE COMPLETE BEGINNERS GUIDE TO ENTREPRENEURS- STARTUP GUIDES FOR ENTREPRENEURS'
+                date='June 27, 2021'
                 blogID='blog4'/>
 
             </Fade>
@@ -89,6 +93,7 @@ function Blogs() {
 export default Blogs
 const Container = styled.div`
 text-align:center ;
+font-family:Arial, Helvetica, sans-serif ;
 display:grid;
 grid-gap:20px;
 grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
@@ -97,13 +102,16 @@ const Heading = styled.h1`
     font-size:50px ;
     text-transform:uppercase ;
     font-family:Montserrat Bold;
+    /* font-family:Arial, Helvetica, sans-serif ; */
     font-weight:bold;
     transition: all ease .6s ;
     color: #fa7525;
     margin-top:20px ;
     
       &:hover{
-          /* letter-spacing:6px ; */
-          margin-left:50px ;
+          letter-spacing:6px ;
+      }
+      @media (max-width:700px){
+              text-align:center ;
       }
 `

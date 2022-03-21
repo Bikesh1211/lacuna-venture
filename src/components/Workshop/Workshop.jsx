@@ -1,29 +1,43 @@
 import { Fade, Slide, Zoom } from 'react-reveal';
 import styled from 'styled-components';
 import Workshop2 from './Workshop2';
+import workshop_img from '../../assets/img/Workshop-img.png'
 function Workshop() {
     
   return (
       
     <Container>
         <div >
-            <Fade right>
+            <Fade up>
                 <div className="banner-img">
-
-            <img src="https://images.unsplash.com/photo-1554415707-6e8cfc93fe23?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="" />
+                    <img src={workshop_img} alt="" />
                 </div>
 
             </Fade>
 
+             <DirectPhone>
+                 <Zoom>
+
+             <a href="tel:01-5245116">
+             <i class="fa-solid fa-phone"></i>
+             </a>
+                 </Zoom>
+
+             </DirectPhone>
 
             <LeftContainer className='container'>
-            <Fade left>
+            <Fade right>
+                {/* <Slide right> */}
+
+
                 <p id='top-p'>“A Stage forward for Your Start-Up" </p>
 
                 <h1>Encouraging a culture wheres <span>IDEAS</span> are welcomed rather than <span>FEARED</span>. </h1>
 
                 <p>For Startup Founders</p>
                 <button>March Forward</button>
+                {/* </Slide> */}
+
             </Fade>
             </LeftContainer>
             
@@ -43,16 +57,23 @@ const Container = styled.div`
                         height:600px ;
                         object-fit:cover ;
                     }
+                    @media (max-width:700px){
+                       .banner-img img{
+                            height:400px ;
+                        }
+                    }
                     position:relative ;
                     font-family:Arial, Helvetica, sans-serif ;
-                    color:black ;
                     button{
                         background-color:#FA7525 ;
+                        color:white ;
+                        font-size:20px ;
                         border:none ;
                         padding:10px 25px 10px 25px ;       
                         border-radius:5px ;
                         &:hover{
-                            background-color:orange ;
+                            background-color:#FA7525;
+                            color:black ;
                         }
 
                     }
@@ -61,30 +82,29 @@ const Container = styled.div`
 const LeftContainer = styled.div` 
 position:absolute ;
 line-height:2em ;
-width:35rem;
+width:45rem;
 top:150px;
-left:20px;
-color:black ;
+left:50px;
+color:white ;
+                        span{
+                            color:#FA7525 ;
+                        }
 
-@media (max-width: 700px){
-    background-color: rgba(255, 255, 255, 0.5);
 
-    width:90%;
-    margin:auto ;
-    /* left:30px ; */
-
-}
 
                     #top-p{
-                        font-size:1.3rem;
+                        /* font-size:1.5rem; */
                     }
                     h1{
                         line-height:1.2em ;
                         margin-top:-10px ;
+                        font-size:3vw ;
+                        text-transform:uppercase ;
+                        font-weight:bold ;
                     }
                     p{
-                        color:#FA7525;
-                        font-size:1rem ;
+                        /* color:#FA7525; */
+                        /* font-size:1.5em ; */
                     }
 /* 
                     span{
@@ -92,4 +112,35 @@ color:black ;
                         color:#FA7525 ;
                         font-family:sans-serif ;
                     } */
+                    @media (max-width: 700px){
+                    width:100% ;
+                    left:0 ;
+                    top:100px ;
+
+                    h1{
+                        font-size:24px ;
+                    }
+}
+`
+
+const DirectPhone = styled.div` 
+position:fixed ;
+top: 300px ;
+right:0;
+font-size:22px ;
+background-color:#FA7525 ;
+padding:10px;
+color:white ;
+border-radius:5px 0 0 5px ;
+z-index:1 ;
+text-align:center ;
+
+                    a{
+                        color: white ;
+                        text-decoration:none ;
+                    }
+                    &:hover a{
+                        color:black ;
+
+                    }
 `

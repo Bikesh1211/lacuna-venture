@@ -9,6 +9,7 @@ function BlogsContent() {
       <BlogItem
         image={blogImg1}
         title="A GUIDE TO CREATING AN EFFECTIVE IDEA AND BUSINESS PLAN"
+        blogDate='February 9, 2022'
         article='A solid business plan should be a blueprint for a successful business. Starting a business is a 
                 huge responsibility, you have to work on a lot of things to make it happen in real life. You have to create
                 amazing ideas and plan a lot of things inside your head before starting a business. Planning is the first 

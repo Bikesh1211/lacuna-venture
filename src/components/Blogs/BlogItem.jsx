@@ -1,20 +1,31 @@
-import { Routes, Route } from "react-router-dom";
 import styled from "styled-components";
 import Fade from "react-reveal/Fade";
-import Slide from "react-reveal/Slide";
 import { Link } from "react-router-dom";
 
 import blogImg1 from "../../assets/img/blog1.jpg";
 import blogImg2 from "../../assets/img/blog2.jpg";
 import blogImg3 from "../../assets/img/blog3.jpg";
 
+import FacebookIcon from '@mui/icons-material/Facebook';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import TwitterIcon from '@mui/icons-material/Twitter';
+import InstagramIcon from '@mui/icons-material/Instagram';
+import PinterestIcon from '@mui/icons-material/Pinterest';
+import YouTubeIcon from '@mui/icons-material/YouTube';
+import SearchIcon from '@mui/icons-material/Search';
+
 function BlogItem(props) {
   return (
     <Container className="container">
       <div>
         <Fade left>
+          <div>
 
+            
           <img src={props.image} alt="" />
+          <p id="events-date">{props.blogDate}</p>
+          </div>
+          
         </Fade>
 
         {/* <Fade left> */}
@@ -25,17 +36,29 @@ function BlogItem(props) {
           <Heading>
             <p>Spread the love</p>
             <SocialIcon>
-              <i class="fa-brands fa-linkedin"></i>
+              <a href="https://www.linkedin.com/company/lacunaventure/mycompany/" target='_blank'>
+                <LinkedInIcon/>
+              </a>
 
-              <i class="fa-brands fa-twitter"></i>
+              <a href="https://twitter.com/lacunaventure" target='_blank'>
+                <TwitterIcon/>
+              </a>
 
-              <i class="fa-brands fa-facebook"></i>
+              <a href="https://www.facebook.com/lacunaventurefamily/" target='_blank'>
+                <FacebookIcon/>
+              </a>
 
-              <i class="fa-brands fa-instagram"></i>
+              <a href="https://www.instagram.com/lacunaventure/" target='_blank'>
 
-              <i class="fa-brands fa-youtube"></i>
+              <InstagramIcon/>
+              </a>
 
-              <i class="fa-brands fa-pinterest"></i>
+              <a href="https://www.youtube.com/channel/UCAQ2bxPzuznPVGBtUy1x6hQ" target='_blank'>
+            <YouTubeIcon/>
+              </a>
+              <a href="https://pin.it/7DLeEKv" target='_blank'>
+                <PinterestIcon/>
+              </a>
             </SocialIcon>
           </Heading>
 
@@ -90,12 +113,13 @@ function BlogItem(props) {
 
           </Fade>
       </div>
-      <Fade right>
+      <Fade up>
         <RecentPost>
             <SearchContainer>
+
           <input type="search" placeholder="Search Post Here..." />
 
-          <i class="fa-solid fa-magnifying-glass"></i>
+          <SearchIconColor/>
             </SearchContainer>
 
           <h1>RECENT POST</h1>
@@ -122,15 +146,15 @@ function BlogItem(props) {
               <img src={blogImg3} alt="" />
               <p>Why Are Audience Getting Addicted to Lacuna Mart Nowadays?</p>
             </Link>
-            <p className="recent-post-date">October 14, 2021</p>
+            <p className="recent-post-date"> October 14, 2021</p>
           </div>
 
           <ImportantLink>
             <h1>IMPORTANT LINK</h1>
             <Link to="/Blogs">Blogs</Link>
-            <Link to="/Blogs">Events</Link>
-            <Link to="/Blogs">Workshop</Link>
-            <Link to="/Blogs">Gallery</Link>
+            <Link to="/events">Events</Link>
+            <Link to="/workshop">Workshop</Link>
+            <Link to="/gallery">Gallery</Link>
           </ImportantLink>
         </RecentPost>
       </Fade>
@@ -161,9 +185,11 @@ const RecentPost = styled.div`
     letter-spacing:1px ;
   }
   .recent-post-date {
-    color: gray;
     font-weight: normal;
     font-size: 0.6em;
+    color:black ;
+    background-color:#F1F5F9;
+    width:auto ;
   }
 
   .recent-post img {
@@ -197,6 +223,17 @@ const RecentPost = styled.div`
 `;
 
 const Container = styled.div`
+
+#events-date{
+  position:absolute ;
+  top: 20px;
+  left:20px ;
+  background-color:#fa7525 ;
+  color:white ;
+  padding:5px ;
+  border-radius:50px ;
+  font-size: 14px;
+}
   margin-top: 50px;
   /* font-family:monaster ; */
 
@@ -218,6 +255,7 @@ const Container = styled.div`
 
   img {
     width: 100%;
+
   }
   p {
     font-family: Arial, Helvetica, sans-serif;
@@ -242,13 +280,22 @@ const ImportantLink = styled.div`
 const SocialIcon = styled.div`
 display: block;
 font-size:30px ;
+background-color: rgba(0, 0, 0, 0.1);
+background-color:#F5F7FB ;
 box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+padding:10px ;
 
- 
- i{
-     margin:5px ;
-    &:hover{
-        color:#FA7525 ;
-    }
+    a{
+      color:black ;
+      font-size:30px;
+      padding-right:10px ;
+      &:hover{
+        color:#fa7525 ;
+
+      }
  }
+`
+const SearchIconColor = styled(SearchIcon)`
+    color:#fa7525 ;
+    position:absolute ;
 `

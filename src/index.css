@@ -4,10 +4,32 @@
 
 
 body{
-    font-family: Montserrat;
-    overflow-x: hidden; 
+    /* font-family: Montserrat; */
+    /* overflow-x: hidden;  */
 }
 .login-container-fluid{
     background-color: #F7F7F7;  
-    /* background-color: rgba(0, 0, 0, 0.356); */
 }
+
+
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    /* background: #f1f1f1; */
+    background: black;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #FA7525;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }

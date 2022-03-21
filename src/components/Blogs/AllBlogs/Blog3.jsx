@@ -1,6 +1,7 @@
 import BlogItem from "../BlogItem"
 import styled from 'styled-components';
 import blogImg3 from '../../../assets/img/blog3.jpg'
+import mahendra_gautam from '../../../assets/img/mahendra-gautam.jpg'
 
 
 function Blog3() {
@@ -9,6 +10,7 @@ function Blog3() {
         <BlogItem
             image={blogImg3}
             title='WHY ARE AUDIENCE GETTING ADDICTED TO LACUNA MART NOWADAYS?'
+            blogDate='October 14, 2021'
 
             article='Why Are Audience Getting Addicted to Lacuna Mart Nowadays?
                      We believe that the shopping experience should also be fun and we feel that shopping is the best fun. Since its opening in 2020, Lacuna Mart has grown to be one of the most well-known and respected independent brands and has been selling its own range of fashionable fashion to clients around the world.'
@@ -45,17 +47,14 @@ function Blog3() {
         />
         <Message className="container">
           <div id="message-from-ceo">
-            <div>
-
-          <img src="https://lacunaventure.com/wp-content/uploads/2021/03/mahendra-gautam.jpg" alt="" />
-            </div>
-
-
+          <img src={mahendra_gautam} alt="" />
           <p>
-          <a href="#mg">Mahendra Gautam</a> <br />
+          <a href="">Mahendra Gautam</a> <br />
           Founder & CEO of Lacuna Venture is a willing entrepreneur with plenty to say about how the entrepreneurship work for startups: A lot has changed since he was a child. He remembers all his childhood dreams being realized from young age onwards and seeing what went on when they crossed over into reality – we have seen these things in action (including successful businesses). Nowadays technology enables startup founders such as him time to develop their strategy along lines of best practices that will create lasting impacts — creating jobs while lowering barriers towards entry among others. Learn more at  https://www.lacunaventure.com.
           {/* EMAIL LOGO */}
           </p>
+            </div>
+            <div>
           </div>
         </Message>
         
@@ -66,13 +65,19 @@ function Blog3() {
 export default Blog3
 const Message = styled.div`
 #message-from-ceo{
-
-  display:grid ;
-  grid-template-columns:.5fr 5fr;
+  display:flex ;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  width:70%;
+  box-sizing:border-box ;
+  padding:10px ;
+  display:grid;
+  background-color:#F5F7FB ;
+  @media (max-width:990px){
+    width:100% ;
+  }
 }
 p{
-  width:70%;
-  border:1px solid gray ;
+  /* width:70%; */
   box-sizing: border-box;
   padding: 10px;
 }
@@ -86,11 +91,11 @@ img{
   border-radius:50% ;
   height:5em ;
   object-fit:cover ;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
   transition: all 1s ease ;
 
   &:hover{
-    transform:scale(1.4) ;
+    transform:rotate(-30deg);
   
   }
 }

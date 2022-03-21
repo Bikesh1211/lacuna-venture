@@ -9,6 +9,7 @@ function BlogsContent() {
       <BlogItem
         image={blogImg2}
         title="HOW TO START A BUSINESS WITH LOW INVESTMENT?"
+        blogDate ='February 6, 2022'
         article='It is very difficult to start a business in the competitive world and mainly it requires huge capital to start a business but if you will think deeply and creatively then you can start your own business with some criteria and also if you’re not financially stable then you can also start implementing some low-cost business ideas. There are many ideas to start a business with low investment, some of them are:'
 
         heading1='Start Your Own YouTube Channel:'

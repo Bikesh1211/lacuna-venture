@@ -36,4 +36,5 @@ function BlogsContent() {
 export default BlogsContent;
 const Container  = styled.div`
 
+
 `
